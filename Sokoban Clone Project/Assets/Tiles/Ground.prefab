@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4775650156092370}
   - component: {fileID: 2569400265310256344}
   m_Layer: 31
-  m_Name: Ground
+  m_Name: Ground Sokoban
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
