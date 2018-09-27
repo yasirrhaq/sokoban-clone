@@ -6,14 +6,12 @@ public class PlayerController : MonoBehaviour {
 
     public float movementSpeed;
     public float distanceToMove;
-    private Rigidbody2D myRigidbody2D;
 
     private bool moveToPoint = false;
     private Vector3 endPosition;
 
 	// Use this for initialization
 	void Start () {
-        myRigidbody2D = GetComponent<Rigidbody2D>();
         endPosition = transform.position;
 	}
 	
