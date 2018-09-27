@@ -5,21 +5,50 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float movementSpeed;
+    public float distanceToMove;
     private Rigidbody2D myRigidbody2D;
+
+    private bool moveToPoint = false;
+    private Vector3 endPosition;
+
 	// Use this for initialization
 	void Start () {
         myRigidbody2D = GetComponent<Rigidbody2D>();
+        endPosition = transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         movement();
 	}
+    private void FixedUpdate()
+    {
+        if (moveToPoint)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, endPosition, movementSpeed * Time.deltaTime);
+        }
+    }
 
     void movement() {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        myRigidbody2D.velocity = new Vector3(horizontal * movementSpeed, vertical * movementSpeed);
+        if (Input.GetKeyDown(KeyCode.A)) //Left
+        {
+            endPosition = new Vector3(endPosition.x - distanceToMove, endPosition.y, endPosition.z);
+            moveToPoint = true;
+        }
+        if (Input.GetKeyDown(KeyCode.D)) //Right
+        {
+            endPosition = new Vector3(endPosition.x + distanceToMove, endPosition.y, endPosition.z);
+            moveToPoint = true;
+        }
+        if (Input.GetKeyDown(KeyCode.W)) //Up
+        {
+            endPosition = new Vector3(endPosition.x, endPosition.y + distanceToMove, endPosition.z);
+            moveToPoint = true;
+        }
+        if (Input.GetKeyDown(KeyCode.S)) //Down
+        {
+            endPosition = new Vector3(endPosition.x, endPosition.y - distanceToMove, endPosition.z);
+            moveToPoint = true;
+        }
     }
 }
