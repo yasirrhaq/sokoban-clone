@@ -6,16 +6,24 @@ public class WinCondition : MonoBehaviour {
 
     // Use this for initialization
     private int Goals;
+    public GameObject YouWinPanel;
+
 	void Start () {
         Goals = GameObject.FindGameObjectsWithTag("Goal").Length;
         Debug.Log("test " + Goals);
 	}
 	
-	// Update is called once per frame
+	// Update is called once per frame      
     //masih kasaran
 	void FixedUpdate () {
         checkWin();
 	}
+
+    private void Awake()
+    {
+        YouWinPanel.SetActive(false);
+    }
+
     public void checkWin()
     {
         int currentGoals = 0;
@@ -30,6 +38,7 @@ public class WinCondition : MonoBehaviour {
         }
         if (currentGoals == Goals )
         {
+            YouWinPanel.SetActive(true);
             Debug.Log("YOU WIN!");
         }
     }
