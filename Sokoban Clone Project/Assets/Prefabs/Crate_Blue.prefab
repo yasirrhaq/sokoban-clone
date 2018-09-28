@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212572701092986122}
   - component: {fileID: 61067263506427386}
   - component: {fileID: 50302547880730994}
+  - component: {fileID: 114214830360117062}
   m_Layer: 0
   m_Name: Crate_Blue
   m_TagString: Untagged
@@ -87,6 +88,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114214830360117062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593940672293394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacd70aa44c3fc14d8afa829745580da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite1: {fileID: 21300000, guid: 2caf440bf409be244b28955f2289010c, type: 3}
+  sprite2: {fileID: 21300000, guid: e8d81a3958d177549a1c29eab23f27e7, type: 3}
 --- !u!212 &212572701092986122
 SpriteRenderer:
   m_ObjectHideFlags: 1
