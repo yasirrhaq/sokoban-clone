@@ -13,7 +13,7 @@ public class WinCondition : MonoBehaviour {
 	
 	// Update is called once per frame
     //masih kasaran
-	void Update () {
+	void FixedUpdate () {
         checkWin();
 	}
     public void checkWin()
