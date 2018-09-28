@@ -21,10 +21,10 @@ public class PlayerController : MonoBehaviour {
 	}
     private void FixedUpdate()
     {
-        checkMovement();
+        ableToMove();
     }
 
-    void checkMovement() {
+    void ableToMove() {
         if (moveToPoint)
         {
             transform.position = Vector3.MoveTowards(transform.position, endPosition, movementSpeed * Time.deltaTime);
