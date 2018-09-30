@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50486115007853990}
   - component: {fileID: 114485908071340906}
   - component: {fileID: 114908065225638628}
-  - component: {fileID: 114290233388887964}
+  - component: {fileID: 114802857378580066}
   m_Layer: 0
   m_Name: CrateDark_Blue
   m_TagString: Box
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985278415120070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0.5, y: -1.5, z: 0}
   m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,19 +90,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114290233388887964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1985278415120070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fa1a8d613f43994c9f432c0620a361d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  YouWinPanel: {fileID: 1549701350016984, guid: bdd09ae840718d841aa864a1f9eb9124,
-    type: 2}
 --- !u!114 &114485908071340906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,6 +103,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite1: {fileID: 21300000, guid: 55503c4d5de66e54baad80112b10a51e, type: 3}
   sprite2: {fileID: 21300000, guid: 2caf440bf409be244b28955f2289010c, type: 3}
+--- !u!114 &114802857378580066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985278415120070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa1a8d613f43994c9f432c0620a361d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YouWinPanel: {fileID: 1096725638720266, guid: bdd09ae840718d841aa864a1f9eb9124,
+    type: 2}
 --- !u!114 &114908065225638628
 MonoBehaviour:
   m_ObjectHideFlags: 1
