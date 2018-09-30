@@ -8,6 +8,7 @@ TagManager:
   - Goal
   - Empty
   - Win Text
+  - Playerr
   layers:
   - Default
   - TransparentFX
