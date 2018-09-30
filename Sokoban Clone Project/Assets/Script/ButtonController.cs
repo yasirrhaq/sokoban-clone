@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonController : MonoBehaviour {
 
     public void NextLevelButton(int index)
-    {
+    { 
         Application.LoadLevel(index);
     }
 
