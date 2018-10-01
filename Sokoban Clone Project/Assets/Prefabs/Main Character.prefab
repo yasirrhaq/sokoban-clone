@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4225699262158770}
   - component: {fileID: 212821867620772772}
   - component: {fileID: 114367109080855538}
-  - component: {fileID: 70812507802410948}
   - component: {fileID: 50876400192902244}
+  - component: {fileID: 61194479433560542}
   m_Layer: 0
   m_Name: Main Character
   m_TagString: Playerr
@@ -63,8 +63,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &70812507802410948
-CapsuleCollider2D:
+--- !u!61 &61194479433560542
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -76,8 +76,18 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.578125, y: 0.921875}
-  m_Direction: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.578125, y: 0.921875}
+    newSize: {x: 0.578125, y: 0.921875}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.98, y: 0.98}
+  m_EdgeRadius: 0
 --- !u!114 &114367109080855538
 MonoBehaviour:
   m_ObjectHideFlags: 1
