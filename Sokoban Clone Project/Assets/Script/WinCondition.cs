@@ -6,10 +6,16 @@ public class WinCondition : MonoBehaviour {
 
     // Use this for initialization
     private int Goals;
-    public GameObject YouWinPanel;
+    public GameObject youWinPanel;
+    private GameObject[] boxes;
+    private void Awake()
+    {
+        youWinPanel.SetActive(false);
+    }
 
-	void Start () {
+    void Start () {
         Goals = GameObject.FindGameObjectsWithTag("Goal").Length;
+        boxes = GameObject.FindGameObjectsWithTag("Box");
         Debug.Log("test " + Goals);
 	}
 	
@@ -19,15 +25,9 @@ public class WinCondition : MonoBehaviour {
         checkWin();
 	}
 
-    private void Awake()
-    {
-        YouWinPanel.SetActive(false);
-    }
-
     public void checkWin()
     {
         int currentGoals = 0;
-        GameObject[] boxes = GameObject.FindGameObjectsWithTag("Box");
         foreach (GameObject box in boxes)
         {
             if (box.GetComponent<BoxController>().onGoal)
@@ -38,7 +38,7 @@ public class WinCondition : MonoBehaviour {
         }
         if (currentGoals == Goals )
         {
-            YouWinPanel.SetActive(true);
+            youWinPanel.SetActive(true);
             Debug.Log("YOU WIN!");
         }
     }

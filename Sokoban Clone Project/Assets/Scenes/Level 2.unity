@@ -203,6 +203,11 @@ Prefab:
       propertyPath: YouWinPanel
       value: 
       objectReference: {fileID: 1446659810}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
+      value: 
+      objectReference: {fileID: 1446659810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
   m_IsPrefabAsset: 0
@@ -7316,6 +7321,11 @@ Prefab:
       propertyPath: YouWinPanel
       value: 
       objectReference: {fileID: 1446659810}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
+      value: 
+      objectReference: {fileID: 1446659810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
   m_IsPrefabAsset: 0
@@ -7436,6 +7446,11 @@ Prefab:
     - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
         type: 2}
       propertyPath: YouWinPanel
+      value: 
+      objectReference: {fileID: 1446659810}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1446659810}
     m_RemovedComponents: []

@@ -194,13 +194,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1985278415120070, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
-      propertyPath: m_Name
-      value: CrateDark_Blue
-      objectReference: {fileID: 0}
     - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
         type: 2}
-      propertyPath: YouWinPanel
+      propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1534375733}
     m_RemovedComponents: []
@@ -764,6 +760,11 @@ Prefab:
       propertyPath: YouWinPanel
       value: 
       objectReference: {fileID: 1534375733}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
+      value: 
+      objectReference: {fileID: 1534375733}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
   m_IsPrefabAsset: 0
@@ -813,6 +814,11 @@ Prefab:
     - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
         type: 2}
       propertyPath: YouWinPanel
+      value: 
+      objectReference: {fileID: 1534375733}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1534375733}
     m_RemovedComponents: []
@@ -1090,15 +1096,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114485908071340906, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
-      propertyPath: gameObject
-      value: 
-      objectReference: {fileID: 1985278415120070, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
     - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
         type: 2}
       propertyPath: YouWinPanel
+      value: 
+      objectReference: {fileID: 1534375733}
+    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1534375733}
     m_RemovedComponents: []
