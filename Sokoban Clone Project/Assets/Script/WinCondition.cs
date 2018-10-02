@@ -5,41 +5,27 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour {
 
     // Use this for initialization
+    public static WinCondition winCondition;
+    public GameObject[] boxes;
     private int Goals;
     public GameObject youWinPanel;
-    private GameObject[] boxes;
+    public HashSet<string> boxComplete;
     private void Awake()
     {
+        winCondition = this;
         youWinPanel.SetActive(false);
     }
 
     void Start () {
-        Goals = GameObject.FindGameObjectsWithTag("Goal").Length;
-        boxes = GameObject.FindGameObjectsWithTag("Box");
-        Debug.Log("test " + Goals);
+        boxComplete = new HashSet<string>();
+        Goals = boxes.Length;
 	}
 	
-	// Update is called once per frame      
-    //masih kasaran
-	void FixedUpdate () {
-        checkWin();
-	}
-
     public void checkWin()
     {
-        int currentGoals = 0;
-        foreach (GameObject box in boxes)
-        {
-            if (box.GetComponent<BoxController>().onGoal)
-            {
-                currentGoals += 1;
-                Debug.Log(currentGoals + "horee");
-            }
-        }
-        if (currentGoals == Goals )
+        if (Goals == boxComplete.Count)
         {
             youWinPanel.SetActive(true);
-            Debug.Log("YOU WIN!");
         }
     }
 }

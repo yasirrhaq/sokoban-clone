@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class BoxController : MonoBehaviour
 {
-    public bool onGoal;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag=="Goal")
+        if (collision.tag == "Goal")
         {
-            onGoal = true;
-            Debug.Log("truee");
+            WinCondition.winCondition.boxComplete.Add(gameObject.name);
+            WinCondition.winCondition.checkWin();
         }
     }
-    /*private void OnTriggerExit2D(Collider2D collision)
-    {
-      onGoal = false;
-        Debug.Log("falseee");
-    }*/
 }
