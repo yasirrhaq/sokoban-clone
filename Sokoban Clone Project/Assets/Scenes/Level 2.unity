@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &48676869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985278415120070, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+    type: 2}
+  m_PrefabInternal: {fileID: 112169331}
 --- !u!1 &71458174
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,16 +203,6 @@ Prefab:
       propertyPath: m_Name
       value: CrateDark_Blue (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
-      propertyPath: YouWinPanel
-      value: 
-      objectReference: {fileID: 1446659810}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
-      propertyPath: youWinPanel
-      value: 
-      objectReference: {fileID: 1446659810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
   m_IsPrefabAsset: 0
@@ -257,6 +252,16 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc91b0dfc944514f86ba9c14947b465, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &443378991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985278415120070, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1955831849}
+--- !u!1 &447802125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985278415120070, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1886070488}
 --- !u!1 &581243493
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581243495}
   - component: {fileID: 581243494}
+  - component: {fileID: 581243496}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -297,6 +303,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581243496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581243493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa1a8d613f43994c9f432c0620a361d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxes:
+  - {fileID: 443378991}
+  - {fileID: 447802125}
+  - {fileID: 48676869}
+  youWinPanel: {fileID: 1446659810}
 --- !u!1001 &610794890
 Prefab:
   m_ObjectHideFlags: 0
@@ -7316,13 +7338,11 @@ Prefab:
       propertyPath: m_Name
       value: CrateDark_Blue (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: YouWinPanel
       value: 
       objectReference: {fileID: 1446659810}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1446659810}
@@ -7443,13 +7463,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: YouWinPanel
       value: 
       objectReference: {fileID: 1446659810}
-    - target: {fileID: 114802857378580066, guid: 5bd6c4c96ac80004b932a247cf0b810d,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1446659810}
