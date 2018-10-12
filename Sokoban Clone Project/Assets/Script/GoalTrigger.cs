@@ -10,10 +10,6 @@ public class GoalTrigger : MonoBehaviour {
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        /*if (spriteRenderer.sprite == null)
-        {
-            spriteRenderer.sprite = sprite1;
-        }*/
     }
     void changeSprite()
     {
