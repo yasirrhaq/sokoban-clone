@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WinCondition : MonoBehaviour {
 
-    // Use this for initialization
     public static WinCondition winCondition;
     public GameObject[] boxes;
     private int Goals;

@@ -591,6 +591,11 @@ Prefab:
       propertyPath: youWinPanel
       value: 
       objectReference: {fileID: 1534375733}
+    - target: {fileID: 114485908071340906, guid: 5bd6c4c96ac80004b932a247cf0b810d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bd6c4c96ac80004b932a247cf0b810d, type: 2}
   m_IsPrefabAsset: 0
